@@ -139,7 +139,7 @@ background: linear-gradient(180deg, rgba(135,168,255,1) 0%, rgba(255,187,183,0.5
     content:'';
     display:block;
     width:70px; height:70px;
-    background:url(/img/naver_icon.png) no-repeat center;
+    background:url(../img/naver_icon.png) no-repeat center;
     background-size:100%;
     position:absolute;
     top:50%; left:10%;
