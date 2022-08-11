@@ -92,7 +92,7 @@ $(function(){
 
 // 퀵메뉴 스크롤
 $(window).scroll(function(){
-				var	windowTop =$(window).scrollTop() +50;
+				var	windowTop =$(window).scrollTop() +500;
 				$("#quick").stop().animate({top:windowTop+"px" },500);
 				//$("#q_mn").stop().animate({속성:"속성값", 속성:"속성값" },1000);	
 				
@@ -121,7 +121,7 @@ $(function () {
   $('html').animate({ scrollTop: offset.top }, 400);
    });
   
-  $('#TOP').click(function () {
+  $('.TOP').click(function () {
     var offset = $('#main').offset();
   $('html').animate({ scrollTop: offset.top }, 400);
   });

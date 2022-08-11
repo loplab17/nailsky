@@ -86,7 +86,7 @@
     #sec_04 .long_txt {
     font-size:1rem;
     }
-    .locaition {
+    #sec_05 .locaition {
     flex-direction: column;
     }
     #sec_05 .store {
@@ -115,6 +115,10 @@
     }   
     #quick div img{
         width:75%;
+    }
+    .TOP div {
+        width:60px;
+        height:60px;
     }
     #main .main_txt p {
     font-size: 1rem;
@@ -184,11 +188,13 @@
     #sec_05 ul .g_tit {
         margin-bottom:10px;
          width: 35%;
-
     }
 
     #footer {
-        padding: 50px;
+        /* padding: 50px; */
+        /* transform:translate(0, 50px); */
+           position: relative;
+    bottom:60px;
     }
     #footer .txt {
         flex-direction: column;    
@@ -199,9 +205,6 @@
     #m_pager {
         display: block;
     }
-    #TOP{
-        bottom:8%;
-    }
     #m_footer_container
     {
         display: block;
@@ -209,7 +212,7 @@
 }
 
 @media all and (max-width:400px){
-    .inner {max-width:380px;}
+    .inner {max-width:370px;}
 
     #main .main_txt p {
         font-size: 1rem;
@@ -293,21 +296,16 @@
 }
 
 @media all and (max-width:381px){
-    .inner{max-width:365px;}
+    .inner{max-width:330px;}
     #m_footer div a{
     font-size:1rem;
 }
 
-
-}
-
-@media all and (max-width:340px){
-    .inner{max-width:310px;}
 }
 
 
 @media all and (max-height:1000px){
-    #TOP{
+    #quick{
     bottom:15%;
 }
 }
