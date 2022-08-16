@@ -209,6 +209,9 @@
         display: block;
     }
 }
+    #m_footer{
+        margin-top: 10px;
+    }
 
 @media all and (max-width:400px){
     /* .inner {max-width:370px;} */
