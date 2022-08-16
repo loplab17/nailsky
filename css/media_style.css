@@ -107,15 +107,26 @@
     /* .inner{
         max-width:440px;
     } */
-    #quick {
+    /* #quick {
     display:none;
-    }   
-    #quick_m_wrap {
-        display: block;
-    }
+    }    */
+    /* #quick_m_wrap {
+    display: block;
+    } */
     #main .main_txt p {
     font-size: 1rem;
     }
+    #quick {
+        position:fixed;
+        right:0;bottom:10%;
+    }
+    #quick img{width:70%;}
+    #quick .TOP div {
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    font-size:1.2rem;
+    }   
    #main .main_img .sub img{
     width:300px;
     top: 30px; left:9%;

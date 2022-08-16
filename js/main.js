@@ -93,14 +93,26 @@ $(function(){
 
 
 // 퀵메뉴 스크롤
-$(window).scroll(function(){
-  var windowTop = $(window).scrollTop() +500;
-        /*TOP으로부터 얼마나 떨어져있는지, 숫자 높을수록 객체가 아래로 내려감 */
-  $("#quick").stop().animate({ top: windowTop + "px" }, 400);
-  // 속도, 500이 적당
-				//$("#q_mn").stop().animate({속성:"속성값", 속성:"속성값" },1000);	
-				
-});
+
+
+$(window).resize(function(){ 
+if (window.innerWidth > 501) {  // 다바이스 크기가 500초과일때
+
+  $(window).scroll(function () {
+    var windowTop = $(window).scrollTop() + 400;
+    /*TOP으로부터 얼마나 떨어져있는지, 숫자 높을수록 객체가 아래로 내려감 */
+    $("#quick").stop().animate({ top: windowTop + "px" }, 400);
+  })
+
+} else {
+  $(window).scroll(function () {
+    var windowTop = $(window).scrollTop() + 0;
+    /*TOP으로부터 얼마나 떨어져있는지, 숫자 높을수록 객체가 아래로 내려감 */
+    $("#quick").stop();
+  });
+}
+
+}).resize(); 
 
 
 
@@ -143,13 +155,13 @@ $(function () {
                 }
    });
             
-      $(window).on('scroll',function(){
-                if($(window).scrollTop()){
-                    $('#quick_m_wrap').removeClass('active');
-                }else{
-                    $('#quick_m_wrap').addClass('active');
-                }
-            });
+      // $(window).on('scroll',function(){
+      //           if($(window).scrollTop()){
+      //               $('#quick_m_wrap').removeClass('active');
+      //           }else{
+      //               $('#quick_m_wrap').addClass('active');
+      //           }
+      //       });
 
 // 모바일버전 퀵버튼1
 $(function () {

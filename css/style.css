@@ -212,27 +212,6 @@ background: linear-gradient(180deg, rgba(135,168,255,1) 0%, rgba(255,187,183,0.5
      padding-top:30px;
 }
 
-#quick{
-    position:absolute;
-    right:3%;bottom:2%;
-    z-index:9999;
-    /* box-shadow: */
-}
-#quick div{
-    margin-bottom:10px;
-}
-
-#quick .TOP div{
-    display:table-cell;
-    text-align: center;
-    vertical-align:middle;
-    background-color:#9a9ddc;
-    color:#ffffff;
-    width:70px;height:70px;
-    border-radius: 70px;
-    margin-top:10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;     
-}
 /* ================section01 끝=================== */
 
 /* ================section02=================== */
@@ -530,7 +509,28 @@ background: linear-gradient(180deg, rgba(135,168,255,1) 0%, rgba(255,187,183,0.5
 }
 /* ====================footer====================== */
 
+#quick{
+    position:absolute;
+    right:3%;bottom:5%;
+    z-index:9999;
+    padding-bottom: 20px ;
+    /* box-shadow: */
+}
+#quick div{
+    margin-bottom:10px;
+}
 
+#quick .TOP div{
+    display:table-cell;
+    text-align: center;
+    vertical-align:middle;
+    background-color:#9a9ddc;
+    color:#ffffff;
+    width:70px;height:70px;
+    border-radius: 70px;
+    margin-top:10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;     
+}
 
 
 /* =============모바일버전 하단메뉴========================== */
@@ -572,13 +572,16 @@ background: linear-gradient(180deg, rgba(135,168,255,1) 0%, rgba(255,187,183,0.5
     padding-right:5px;
 }
 #m_footer div { margin: auto 0;transition: 0.3s;}
-/* #m_footer div a:hover {
-    background-color: #9A9DDC;
-    color: #ffffff;
-} */
+
 
 /* ====================모바일버전 퀵버튼====================*/
-#quick_m_wrap  {position:fixed; bottom:20%; right:15%; display:none; padding:30px 10px;z-index: 9999; } 
+#quick_m_wrap  {
+    position:fixed;
+    bottom:20%; right:15%;
+    padding:30px 10px;
+    z-index: 9999;
+    display:none; 
+ } 
 /*버튼의 전체 위치를 선정하는 코드*/
 #quick_m p {
     position: absolute;
