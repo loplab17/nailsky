@@ -214,25 +214,19 @@ background: linear-gradient(180deg, rgba(135,168,255,1) 0%, rgba(255,187,183,0.5
 
 #quick{
     position:absolute;
-    right:3%;bottom:5%;
+    right:3%;bottom:2%;
     z-index:9999;
     /* box-shadow: */
 }
 #quick div{
     margin-bottom:10px;
 }
-.TOP {
-    /* position: absolute;
-    bottom:3%;right:3%;
-    z-index:9999;
-   */
-    margin-top:30px;
-}
-.TOP div{
+
+#quick .TOP div{
     display:table-cell;
     text-align: center;
     vertical-align:middle;
-    background-color:#9a9ddc8a;
+    background-color:#9a9ddc;
     color:#ffffff;
     width:70px;height:70px;
     border-radius: 70px;
@@ -546,7 +540,7 @@ background: linear-gradient(180deg, rgba(135,168,255,1) 0%, rgba(255,187,183,0.5
     position:fixed;
     bottom:0;
     width:100%;
-    z-index:999;
+    z-index:9999;
 }
 #m_footer {
     display: flex;
@@ -582,10 +576,77 @@ background: linear-gradient(180deg, rgba(135,168,255,1) 0%, rgba(255,187,183,0.5
     color: #ffffff;
 } */
 
+/* ====================모바일버전 퀵버튼====================*/
+#quick_m_wrap  {position:fixed; bottom:20%; right:20%; display:none; padding:30px 5px;z-index: 9999; } 
+/*버튼의 전체 위치를 선정하는 코드*/
+#quick_m p {
+    position: absolute;
+    top:0; left:0;
+    width:60px; 
+    height:60px;
+    background:#ffa2a2fb;
+    color:#ffffff;
+    border-radius: 50%;
+    font-size: 4rem;
+    text-align: center;
+    display: block;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.107) 0px 8px 16px -8px;  
+}
 
+/* 버튼의 모든 속성을 지정, position absolute로 화면에 떠있게 하려함. 
+top 0 left 0인 이유는 클릭 전 초기 버튼들을 모두 같은 자리에 겹쳐놓기 위함*/
+#quick_m .open{
+    position: absolute;
+    z-index:100;
+    display:block;
+    width:60px; 
+    height:60px;
+    transition:1s;
+    text-align:center;
+    background: url('../img/add_ic.png') no-repeat center;
+}
+
+#quick_m .bt1, #quick_m .bt2, #quick_m .bt3{z-index:99;}
+#quick_m .bt1{
+    background: url('../img/m_naver_ic.png') no-repeat center;
+}
+#quick_m .bt2{
+    background: url('../img/m_kakao_ic.png') no-repeat center;
+}
+#quick_m .bt3{
+    background: url('../img/m_insta_ic.png') no-repeat center;
+}
+
+#quick_m_wrap .TOP{
+   position: absolute;
+   top:70px; left:0;
+   width:60px; height:60px;
+   background-color: #9a9ddcfb;
+   text-align: center;
+   border-radius:50px;
+   font-size:1.4rem;
+   color:#ffffff;
+    display:table-cell;
+    text-align: center;
+    vertical-align:middle;
+}
+#quick_m_wrap .TOP div{
+    display:table-cell;
+    text-align: center;
+    vertical-align:middle;
+    /* background-color:#9a9ddc;
+    color:#ffffff; */
+    width:60px;height:60px;
+}
+
+#quick_m_wrap.active{
+    display:block;
+    transition:0.3s;
+}
 
 /* =====================애니메이션CSS====================== */
- #sec_02 .more:hover img#more_ic , #quick{
+ #sec_02 .more:hover img#more_ic{
     animation: more 0.5s infinite alternate linear ;
 }
 @keyframes more {

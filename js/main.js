@@ -90,13 +90,19 @@ $(function(){
 })//ready
 
 
+
+
 // 퀵메뉴 스크롤
 $(window).scroll(function(){
-				var	windowTop =$(window).scrollTop() +500;
-				$("#quick").stop().animate({top:windowTop+"px" },500);
+  var windowTop = $(window).scrollTop() +500;
+        /*TOP으로부터 얼마나 떨어져있는지, 숫자 높을수록 객체가 아래로 내려감 */
+  $("#quick").stop().animate({ top: windowTop + "px" }, 400);
+  // 속도, 500이 적당
 				//$("#q_mn").stop().animate({속성:"속성값", 속성:"속성값" },1000);	
 				
 });
+
+
 
 //메뉴 클릭시 섹션으로 워프 
 $(function () {
@@ -135,4 +141,63 @@ $(function () {
                 }else{
                     $('#header').removeClass('active');
                 }
+   });
+            
+      $(window).on('scroll',function(){
+                if($(window).scrollTop()){
+                    $('#quick_m_wrap').removeClass('active');
+                }else{
+                    $('#quick_m_wrap').addClass('active');
+                }
             });
+
+// 모바일버전 퀵버튼1
+$(function () {
+  var quick_m = 0;
+  $('#quick_m .open').click(function () {
+    if (quick_m == 0) {
+      $(this).css({ transform:'rotate(405deg)'});
+      $('#quick_m .bt1').animate({top:'-70px'}, 500);
+      quick_m = 1;
+
+    } else {
+      $(this).css({ transform:'rotate(0deg)'});
+      $('#quick_m .bt1').animate({top:'0px'}, 500);
+      quick_m = 0;
+    }
+  })//click
+})//ready
+
+// 모바일버전 퀵버튼2
+$(function () {
+  var quick_m = 0;
+  $('#quick_m .open').click(function () {
+    if (quick_m == 0) {
+      $(this).css({ transform:'rotate(405deg)'});
+      $('#quick_m .bt2').animate({top:'-140px'}, 500);
+      quick_m = 1;
+
+    } else {
+      $(this).css({ transform:'rotate(0deg)'});
+      $('#quick_m .bt2').animate({top:'0px'}, 500);
+      quick_m = 0;
+    }
+  })//click
+})//ready
+
+// 모바일버전 퀵버튼3
+$(function () {
+  var quick_m = 0;
+  $('#quick_m .open').click(function () {
+    if (quick_m == 0) {
+      $(this).css({ transform:'rotate(405deg)'});
+      $('#quick_m .bt3').animate({top:'-210px'}, 500);
+      quick_m = 1;
+
+    } else {
+      $(this).css({ transform:'rotate(0deg)'});
+      $('#quick_m .bt3').animate({top:'0px'}, 500);
+      quick_m = 0;
+    }
+  })//click
+})//ready
