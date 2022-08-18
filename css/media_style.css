@@ -104,15 +104,6 @@
 }
 
 @media all and (max-width:500px){
-    /* .inner{
-        max-width:440px;
-    } */
-    /* #quick {
-    display:none;
-    }    */
-    /* #quick_m_wrap {
-    display: block;
-    } */
     #main .main_txt p {
     font-size: 1rem;
     }

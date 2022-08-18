@@ -249,9 +249,10 @@ background: linear-gradient(180deg, rgba(135,168,255,1) 0%, rgba(255,187,183,0.5
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content:space-around;
+    justify-content:center;
     margin-bottom:150px;
 }
+#sec_02 .e_box .item_box {padding:0 100px 0 100px;}
 #sec_02 .e_box .item_box h3{
     font-size:2.8rem;
     margin-bottom:20px;
