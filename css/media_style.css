@@ -152,6 +152,9 @@
     #sec_02 .price_01 ul,#sec_02 .price_01 ul {
         word-break: keep-all;
     }
+    #sec_02 .e_box .item_box {
+    padding:0 0 0 0;
+    }
     #sec_02 .tit_flex {
     margin-bottom: 20px;
 }
